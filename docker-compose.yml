@@ -17,6 +17,7 @@ services:
     ports:
       - "8080:8080"
     environment:
+      - 'OPENAI_API_BASE_URL=http://host.docker.internal:4000/v1'
       - 'WEBUI_AUTH=false'
       - 'ENABLE_LITELLM=true'
       - 'LITELLM_PROXY_PORT=4000'

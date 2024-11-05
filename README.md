@@ -31,7 +31,5 @@ make start
 ```bash
 http://localhost:8080
 ```
-In the OpenWebUI interface I went to:
-Settings -> Connections -> Made a new OpenAI API with http://host.docker.internal:4000/v1
 
-5. Chat
+5. Choose model & Chat
