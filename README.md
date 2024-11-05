@@ -8,7 +8,7 @@
 - BedrockFullAccess policy attached to the user
 - Key at ` ~/.aws/credentials` have the same format with .env.example file
 - Python Environment
-- 
+
 ## Usage
 
 1. Clone the repository
@@ -27,6 +27,11 @@ make setup
 make start
 ```
 
-4. Fill backend host
+4. WebUI host
+```bash
+http://localhost:8080
+```
 In the OpenWebUI interface I went to:
 Settings -> Connections -> Made a new OpenAI API with http://host.docker.internal:4000/v1
+
+5. Chat
