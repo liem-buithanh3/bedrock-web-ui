@@ -1,11 +1,16 @@
 setup:
 	pip install -r requirements.txt
 
-start-be:
-	litellm --config config.yaml
+stop-be:
+	pkill -f "litellm --config config.yaml" || true
 
-start-fe:
+start-be: stop-be
+	nohup litellm --config config.yaml &
+
+stop-fe:
 	docker compose down
+
+start-fe: stop-fe
 	docker compose up -d
 
-start: start-fe start-be
+start: start-be start-fe
