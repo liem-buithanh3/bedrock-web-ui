@@ -6,7 +6,7 @@
 
 ## Requirements
 - BedrockFullAccess policy attached to the user
-- Key at ` ~/.aws/credentials` have the same format with .env.example file
+- Key at `~/.aws/credentials` have the same format with .env.example file
 - Python Environment
 
 ## Usage

@@ -1,16 +1,40 @@
 model_list:
-  - model_name: bedrock-claude-3-5-sonnet-v1
+  - model_name: nova-pro-1-0
     litellm_params:
-      model: bedrock/us.anthropic.claude-3-5-sonnet-20240620-v1:0
-      temperature: 0.7
+      model: bedrock/us.amazon.nova-pro-v1:0
+      temperature: 0.9
+      max_tokens: 5120
+      top_p: 0.95
+#      top_k: 200
+
+  - model_name: bedrock-claude-3-5-haiku
+    litellm_params:
+      model: bedrock/us.anthropic.claude-3-5-haiku-20241022-v1:0
+      temperature: 0.9
       max_tokens: 4096
       top_p: 0.95
       top_k: 200
 
-  - model_name: bedrock-claude-3-haiku
+  - model_name: bedrock-claude-3-5-sonnet-v2
     litellm_params:
-      model: bedrock/us.anthropic.claude-3-haiku-20240307-v1:0
-      temperature: 0.7
+      model: bedrock/us.anthropic.claude-3-5-sonnet-20241022-v2:0
+      temperature: 0.9
       max_tokens: 4096
       top_p: 0.95
       top_k: 200
+
+#  - model_name: bedrock-claude-3-5-sonnet-v1
+#    litellm_params:
+#      model: bedrock/us.anthropic.claude-3-5-sonnet-20240620-v1:0
+#      temperature: 0.7
+#      max_tokens: 4096
+#      top_p: 0.95
+#      top_k: 200
+#
+#  - model_name: bedrock-claude-3-haiku
+#    litellm_params:
+#      model: bedrock/us.anthropic.claude-3-haiku-20240307-v1:0
+#      temperature: 0.7
+#      max_tokens: 4096
+#      top_p: 0.95
+#      top_k: 200
